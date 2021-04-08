@@ -1,0 +1,17 @@
+//제리와 톰
+//톰은 체리 1kg 사옴. 그런데 톰이 A/Bkg을 훔침. 톰에게 남아있는 치즈의 무게 구하기
+//input: A, B
+//output: A, B
+
+#include<iostream>
+using namespace std;
+
+int main(void)
+{
+	int A, B, C = 0;
+	cin >> A >> B;
+	C = B - A;
+	cout << C << " " << B;
+
+	return 0;
+}
