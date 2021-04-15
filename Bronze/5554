@@ -1,0 +1,22 @@
+//심부름 가는 길
+//이동시간이 전부 초 단위로 기록됨. 총 이동시간이 몇 분 몇 초인지 출력하기
+//input:A, B, C, D
+//output: x(분), y(초)
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int A, B, C, D;
+	cin >> A >> B >> C >> D;
+	int x = (A + B + C + D) / 60;
+	int y = (A + B + C + D) % 60;
+
+	cout << x << endl;
+	cout << y << endl;
+
+	return 0;
+
+	}
