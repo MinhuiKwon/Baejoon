@@ -1,0 +1,31 @@
+//와글와글 숭고한
+//각 대학교의 참여도를 입력받아 세 대학교 참여도 합이 100이상인지 알아보기
+//입력: S, K, H
+//출력: OK 또는 가장 참여도 낮은 대학
+
+
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int S, K, H;
+	cin >> S >> K >> H;
+	if (S + K + H >= 100) {
+		cout << "OK" << endl;
+	}
+	else {
+		if (S < K && S < H) {
+			cout << "Soongsil" << endl;
+		}
+		else if (K < S && K < H) {
+			cout << "Korea" << endl;
+		}
+		else if (H < S && H < K) {
+			cout << "Hanyang" << endl;
+		}
+	}
+
+	return 0;
+
+	}
