@@ -1,4 +1,33 @@
 // 평균
 // 점수 중 최댓값을 골라 새로 계산한 후, 새로운 평균 구하기
-// 입력:
-// 출력: 
+// 입력: N, j
+// 출력: ave
+
+#include<iostream>
+using namespace std;
+
+int main(void)
+{
+	int N, i, j = 0;
+	float list[1000];
+	float sum = 0;
+	int M = list[0];
+
+	cin >> N;
+
+	for (i = 0; i < N; i++) {
+		cin >> j;
+		list[i] = j;
+		if (M < list[i])
+			M = list[i];
+	}
+	for (i = 0; i < N; i++) {
+		list[i] = list[i] / M * 100;
+		sum += list[i];
+	}
+	float ave = sum / N;
+
+	cout << ave;
+	
+	return 0;
+}
